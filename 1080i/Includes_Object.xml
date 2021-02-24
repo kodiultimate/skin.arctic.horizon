@@ -9,6 +9,7 @@
             <property name="DBType">$INFO[$PARAM[listitem].DBType]</property>
             <property name="FolderPath">$INFO[$PARAM[listitem].FolderPath]</property>
             <property name="MPAA">$INFO[$PARAM[listitem].MPAA]</property>
+            <property name="Genre">$INFO[$PARAM[listitem].Genre]</property>
             <property name="Year">$INFO[$PARAM[listitem].Year]</property>
             <property name="Premiered">$INFO[$PARAM[listitem].Premiered]</property>
             <property name="EndTime">$INFO[$PARAM[listitem].EndTime]</property>
@@ -396,14 +397,14 @@
                     <width>0</width>
                     <visible>String.IsEqual(Control.GetLabel(991100),common/null.png)</visible>
                 </control>
-                <!-- <control type="image">
+                <control type="image">
                     <fadetime>100</fadetime>
                     <centertop>50%</centertop>
                     <width>71</width>
                     <height>42</height>
                     <aspectratio>keep</aspectratio>
                     <texture>$INFO[ListItem.Studio,resource://resource.images.studios.coloured/,.png]</texture>
-                </control> -->
+                </control>
                 <include content="Object_Provider"><param name="pos" value="1" /></include>
                 <include content="Object_Provider"><param name="pos" value="2" /></include>
                 <include content="Object_Provider"><param name="pos" value="3" /></include>
@@ -564,7 +565,7 @@
 
     <include name="Object_Info_Ratings">
         <param name="top" default="-14" />
-        <param name="imdbvotes" default="false" />
+        <param name="imdbvotes" default="true" />
         <param name="top250" default="true" />
         <param name="oscars" default="true" />
         <param name="additionalratings" default="true" />
@@ -1271,6 +1272,23 @@
                     <font>font_tiny</font>
                     <label>$INFO[Window(Home).Property(TMDbHelper.$PARAM[tmdbtype].Top250), #,]</label>
                     <visible>Integer.IsGreater(Window(home).Property(TMDbHelper.$PARAM[tmdbtype].Top250),0)</visible>
+                </include>
+                <include content="Object_Control">
+                    <param name="type" value="image" />
+                    <top>1</top>
+                    <width>57</width>
+                    <height>37</height>
+                    <texture colordiffuse="$PARAM[colordiffuse]_100">$INFO[Window(home).Property(TMDbHelper.$PARAM[tmdbtype].Studio.1.Name),resource://resource.images.studios.coloured/,.png]</texture>
+                </include>
+                <include content="Object_Control">
+                    <param name="type" value="label" />
+                    <textcolor>$PARAM[colordiffuse]_70</textcolor>
+                    <top>2</top>
+                    <width>auto</width>
+                    <height>28</height>
+                    <align>left</align>
+                    <font>font_tiny</font>
+                    <label>$INFO[Window(home).Property(TMDbHelper.$PARAM[tmdbtype].Studio.1.Name)]</label>
                 </include>
             </control>
         </definition>
