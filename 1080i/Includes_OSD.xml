@@ -264,7 +264,7 @@
                             </control>
                         </control>
 
-                        <include content="Object_Info_Ratings" condition="!Skin.HasSetting(DisableAllRatings) + Skin.HasSetting(EnableOSDRatings)">
+                        <include content="Object_Info_Ratings" condition="!Skin.HasSetting(DisableAllRatings)">
                             <param name="userrating" value="VideoPlayer.UserRating" />
                             <param name="starrating" value="VideoPlayer.Rating" />
                             <param name="tmdbtype" value="Player" />
@@ -283,6 +283,15 @@
                         </control>
 
                     </control>
+                    <control type="image">
+            				   <bottom>-100</bottom>
+                       <right>0</right>
+                       <width>500</width>
+                       <align>bottom</align>
+                       <texture background="true">$VAR[Image_OSD_ClearArt]</texture>
+                       <aspectratio>keep</aspectratio>
+                    </control>
+
                 </control>
             </control>
 
@@ -313,6 +322,13 @@
                             <param name="image" value="$VAR[Image_56560_VideoQuality]" />
                             <param name="textcolor" value="panel_fg_100" />
                         </include>
+                    </control>
+                    <control type="image">
+            				   <bottom>-500</bottom>
+                       <right>0</right>
+                       <width>500</width>
+                       <texture>$VAR[Image_OSD_ClearArt]</texture>
+                       <aspectratio>keep</aspectratio>
                     </control>
                 </control>
             </control>
@@ -780,6 +796,20 @@
             <include>OSD_Button_OnFocus</include>
             <visible>Window.IsVisible(musicosd)</visible>
         </control> -->
+        <control type="button" id="24">
+            <centertop>50%</centertop>
+            <description>Playlist</description>
+            <width>48</width>
+            <height>48</height>
+            <label/>
+            <font/>
+            <texturefocus colordiffuse="$VAR[ColorHighlight]">osd/playlist.png</texturefocus>
+            <texturenofocus colordiffuse="panel_fg_70">osd/playlist.png</texturenofocus>
+            <onclick>Close</onclick>
+            <onclick>ActivateWindow(videoplaylist)</onclick>
+            <include>OSD_Button_OnFocus</include>
+            <visible>Integer.IsGreater(Playlist.Length(video),1)</visible>
+        </control>
         <control type="button" id="25">
             <centertop>50%</centertop>
             <description>Settings</description>
