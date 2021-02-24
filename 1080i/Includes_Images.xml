@@ -70,6 +70,7 @@
         <value condition="!String.IsEmpty(Container(56560).ListItemAbsolute(0).Property(artist.clearart))">$INFO[Container(56560).ListItemAbsolute(0).Property(artist.clearart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.clearart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.clearart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.tvshow.clearart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.tvshow.clearart)]</value>
+        <value>$VAR[Image_Home_Clearlogo]</value>
     </variable>
 
     <variable name="Image_OSD_ClearArt">
@@ -87,6 +88,7 @@
         <value condition="!String.IsEmpty(ListItem.Art(artist.clearart))">$INFO[ListItem.Art(artist.clearart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.clearart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.clearart)]</value>
         <value condition="!String.IsEmpty(Window(Home).Property(TMDbHelper.ListItem.tvshow.clearart))">$INFO[Window(Home).Property(TMDbHelper.ListItem.tvshow.clearart)]</value>
+        <value>$VAR[Image_ClearLogo]</value>
     </variable>
 
     <variable name="Image_DiscArt">
