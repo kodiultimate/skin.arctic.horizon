@@ -783,10 +783,13 @@
                         <param name="type" value="image" />
                         <texture background="true">$VAR[Image_ClearLogo$PARAM[affix]]</texture>
                         <aspectratio align="right">keep</aspectratio>
-                        <bordersize>30</bordersize>
+                        <bordersize>20</bordersize>
                         <width>250</width>
                         <left>0</left>
-                        <bottom>-150</bottom>
+                        <aligny>left</aligny>
+                        <alignx>bottom</alignx>
+                        <align>left</align>
+                        <bottom>-140</bottom>
                     </include>
                     <include content="Object_Control" condition="$PARAM[selectbox] + $PARAM[textpanel] + !Skin.HasSetting(EnableClassicIndicators)">
                         <param name="type" value="group" />
