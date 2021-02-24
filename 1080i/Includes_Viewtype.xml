@@ -779,6 +779,15 @@
                         <param name="Exp_SpecialIcon" value="$EXP[Exp_SpecialIcon$PARAM[affix]]" />
                         <param name="Image_DefaultIcon" value="$VAR[Image_DefaultIcon$PARAM[affix]]" />
                     </include>
+                    <include content="Object_Control">
+                        <param name="type" value="image" />
+                        <texture background="true">$VAR[Image_ClearLogo$PARAM[affix]]</texture>
+                        <aspectratio align="right">keep</aspectratio>
+                        <bordersize>30</bordersize>
+                        <width>250</width>
+                        <left>0</left>
+                        <bottom>-150</bottom>
+                    </include>
                     <include content="Object_Control" condition="$PARAM[selectbox] + $PARAM[textpanel] + !Skin.HasSetting(EnableClassicIndicators)">
                         <param name="type" value="group" />
                         <bottom>-13</bottom>
@@ -2378,4 +2387,3 @@
         </definition>
     </include>
 </includes>
-
