@@ -10,8 +10,8 @@
         </control>
         <control type="button" id="9001">
             <include>Defs_Offscreen_Button</include>
-            <onfocus condition="!Player.HasMedia">ReplaceWindow($INFO[System.StartupWindow])</onfocus>
-            <onfocus condition="Player.HasMedia">AlarmClock(tryagain,SetFocus(9002),00:01,silent)</onfocus>
+            <onfocus condition="!Player.HasMedia + !String.IsEmpty(Window(Home).Property(TMDbHelper.ServiceStarted))">ReplaceWindow($INFO[System.StartupWindow])</onfocus>
+            <onfocus condition="Player.HasMedia | String.IsEmpty(Window(Home).Property(TMDbHelper.ServiceStarted))">AlarmClock(tryagain,SetFocus(9002),00:01,silent)</onfocus>
         </control>
         <control type="button" id="9002">
             <include>Defs_Offscreen_Button</include>
