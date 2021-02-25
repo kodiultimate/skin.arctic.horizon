@@ -561,13 +561,13 @@
                 <nested />
                 <right>view_pad</right>
                 <left>view_pad</left>
-                <top>widgets_label_top</top>
-                <height>widgets_item_height</height>
+                <top>780</top>
+                <height>widgets_fullscreen_item_height</height>
                 <visible>$PARAM[group-visible]</visible>
                 <control type="grouplist">
                     <left>20</left>
-                    <height>widgets_item_height</height>
-                    <bottom>-210</bottom>
+                    <height>widgets_fullscreen_item_height</height>
+                    <bottom>-310</bottom>
                     <right>660</right>
                     <orientation>vertical</orientation>
                     <usecontrolcoords>true</usecontrolcoords>
@@ -575,8 +575,8 @@
                     <itemgap>0</itemgap>
                     <include content="Home_Vertical_Info_Content">
                         <param name="id" value="3001" />
-                        <param name="plotheight" value="80" />
-                        <param name="plotheight-nr" value="120" />
+                        <param name="plotheight" value="130" />
+                        <param name="plotheight-nr" value="150" />
                     </include>
                 </control>
                 <control type="group">
@@ -585,15 +585,15 @@
                     <animation reversible="false" effect="fade" start="0" end="100" delay="200" time="400" tween="cubic" easing="inout">Visible</animation>
                     <control type="image">
                         <right>20</right>
-                        <bottom>-260</bottom>
-                        <height>80</height>
+                        <bottom>-360</bottom>
+                        <height>230</height>
                         <fadetime>200</fadetime>
                         <aspectratio align="right" aligny="bottom">keep</aspectratio>
-                        <texture background="true">$VAR[Image_Home_Clearlogo]</texture>
+                        <texture background="true">$VAR[Image_Home_ClearArt]</texture>
                     </control>
                     <control type="label">
-                        <right>20</right>
-                        <bottom>-300</bottom>
+                        <right>0</right>
+                        <bottom>-400</bottom>
                         <height>20</height>
                         <fadetime>200</fadetime>
                         <width>202</width>
@@ -606,11 +606,12 @@
             </control>
             <control type="grouplist" id="$PARAM[group-id]" >
                 <visible>$PARAM[group-visible]</visible>
-                <top>630</top>
+                <top>720</top>
                 <left>view_pad</left>
                 <right>-26</right>
                 <align>left</align>
-                <height>170</height>
+                <aligny>top</aligny>
+                <height>220</height>
                 <orientation>horizontal</orientation>
                 <usecontrolcoords>true</usecontrolcoords>
                 <itemgap>-10</itemgap>
@@ -1550,4 +1551,3 @@
         </control>
     </include>
 </includes>
-

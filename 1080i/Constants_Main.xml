@@ -15,6 +15,7 @@
     <constant name="widgets_group_height">1080</constant>
     <constant name="widgets_group_itemgap">-410</constant>
     <constant name="widgets_item_height">420</constant>
+    <constant name="widgets_fullscreen_item_height">470</constant>
     <constant name="widgets_label_top">370</constant>
     <constant name="widgets_item_top">230</constant>
     <constant name="widgets_info_item_top">660</constant>
