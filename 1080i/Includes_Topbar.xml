@@ -89,6 +89,22 @@
                     </control>
                 </control>
                 <control type="grouplist">
+                    <visible>[!Control.HasFocus(60) + !Control.HasFocus(64)] | String.IsEmpty(Container.NumItems)</visible>
+                    <top>55</top>
+                    <right>view_pad</right>
+                    <align>right</align>
+                    <orientation>horizontal</orientation>
+                    <itemgap>0</itemgap>
+                    <width>700</width>
+                    <usecontrolcoords>true</usecontrolcoords>
+                    <control type="label">
+                        <width>auto</width>
+                        <font>font_tiny</font>
+                        <textcolor>$PARAM[fgcolor]_100</textcolor>
+                        <label>$INFO[System.Date]</label>
+                    </control>
+                </control>
+                <control type="grouplist">
                     <visible>[Control.HasFocus(60) | Control.HasFocus(64)] + !String.IsEmpty(Container.NumItems)</visible>
                     <right>view_pad</right>
                     <align>right</align>
