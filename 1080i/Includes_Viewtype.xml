@@ -790,6 +790,8 @@
                         <alignx>bottom</alignx>
                         <align>left</align>
                         <bottom>-140</bottom>
+                        <visible>String.IsEqual(ListItem.DBTYPE,episode)</visible>
+                        <visible>!Skin.HasSetting(DisableLandscapeArt)</visible>
                     </include>
                     <include content="Object_Control" condition="$PARAM[selectbox] + $PARAM[textpanel] + !Skin.HasSetting(EnableClassicIndicators)">
                         <param name="type" value="group" />
