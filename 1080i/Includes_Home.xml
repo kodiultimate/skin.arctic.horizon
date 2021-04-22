@@ -1390,7 +1390,7 @@
                     <top>120</top>
                     <include content="Home_Menu_Header">
                         <param name="width" value="160" />
-                        <param name="icon" value="special://skin/extras/icons/home.png" />
+                        <param name="icon" value="special://skin/extras/icons/ku.png" />
                         <param name="iconvisible" value="False" />
                     </include>
                     <include content="Home_Menu">
