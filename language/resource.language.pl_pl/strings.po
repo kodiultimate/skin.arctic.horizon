@@ -1725,67 +1725,9 @@ msgstr "Zachód"
 #: /1080i/includes_weather.xml
 msgctxt "#31443"
 msgid "UV index"
-msgstr ""
+msgstr "Indeks UV"
 
 #: /1080i/includes_weather.xml
 msgctxt "#31444"
 msgid "Today"
 msgstr "Dzisiaj"
-
-
-########### Main menu items ################
-###: /shortcuts/mainmenu.DATA.xml for mainmenu items
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40000"
-msgid "Movies"
-msgstr "Filmy"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40001"
-msgid "TV Shows"
-msgstr "Seriale"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40002"
-msgid "TV"
-msgstr "Telewizja"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40003"
-msgid "iptv"
-msgstr "IPTV"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40004"
-msgid "Audio"
-msgstr "Audio"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40005"
-msgid "Favourites"
-msgstr "Ulubione"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40006"
-msgid "Weather"
-msgstr "Pogoda"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40007"
-msgid "Settings"
-msgstr "Ustawienia"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40008"
-msgid "Finish"
-msgstr "Koniec"
-
-#: /shortcuts/mainmenu.DATA.xml
-msgctxt "#40009"
-msgid "Sport"
-msgstr "Sport"
-
-
-########### Submenu items ################
-###: /shortcuts/tvshows-1.DATA.xml for submenu items
